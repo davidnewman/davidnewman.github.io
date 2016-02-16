@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+This is the personal blog of Dave Newman, a New York based software engineer, administrator, and technologist of absolutely no note.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+Dave has shipped software in C++, C#, and PHP on both Microsoft and Linux based systems. Dave routinely manages and architects systems that support tens of millions of users on both the Amazon and Rackspace clouds.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Dave earned a B.S. in Computer Science from [Kettering University](https://www.kettering.edu).
+
+All views, statements, and expressions of frustration on this site are Dave's and do not reflect those of any employer past, present or future.
