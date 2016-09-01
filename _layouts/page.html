@@ -1,14 +1,9 @@
 ---
 layout: default
 ---
-<article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-</article>
+<div class="media">
+    <h1 class="page-header">{{ page.title }} <small>{{ post.date | date: "%b %-d, %Y" }}</small></h1>
+    <div class="media-body">
+        {{ content }}
+    </div>
+</div>

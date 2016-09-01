@@ -6,18 +6,15 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Dave Newman's Blog
+title: davidnewman
 email: newman.de@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A blog about software development, system administration,
-  and the exploration of technology. 
+  A blog about software development, system administration, and the exploration of technology.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: dasnewman
 github_username:  davidnewman
 
-
 # Build settings
-markdown: redcarpet
-redcarpet:
-    extensions: [ "no_intra_emphasis", "fenced_code_blocks", "tables"]
+markdown: kramdown
+highlighter: rouge

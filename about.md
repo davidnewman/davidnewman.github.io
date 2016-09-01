@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: post
 title: About
+navorder: 2
 permalink: /about/
+thumbnail: /images/dnewman.png
 ---
 
 This is the personal blog of Dave Newman, a New York based software engineer, administrator, and technologist of absolutely no note.

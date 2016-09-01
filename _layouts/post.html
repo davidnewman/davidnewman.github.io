@@ -1,15 +1,16 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
-
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
-
-</article>
+<div class="media">
+    <div class="media-left">
+        {% assign thumb = "/images/ph-128-128.png" %}
+        {% if page.thumbnail %}
+            {% assign thumb = page.thumbnail %}
+        {% endif %}
+        <img class="media-object" src="{{ thumb | prepend: site.baseurl }}" />
+    </div>
+    <div class="media-body">
+        <h2 class="media-heading">{{ page.title }} <small>{{ page.date | date: "%b %-d, %Y" }}</small></h2>
+        {{ content }}
+    </div>
+</div>

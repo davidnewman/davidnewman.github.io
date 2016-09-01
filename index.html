@@ -1,23 +1,22 @@
 ---
 layout: default
+title: Posts
+navorder: 1
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+{% for post in site.posts %}
+<div class="media">
+    <div class="media-left">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            {% assign thumb = "/images/ph-128-128.png" %}
+            {% if post.thumbnail %}
+                {% assign thumb = post.thumbnail %}
+            {% endif %}
+            <img class="media-object" src="{{ thumb | prepend: site.baseurl }}" />
+        </a>
+    </div>
+    <div class="media-body">
+        <h2 class="media-heading"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{ post.date | date: "%b %-d, %Y" }}</small></h2>
+        {{ post.excerpt }}
+    </div>
 </div>
+{% endfor %}
